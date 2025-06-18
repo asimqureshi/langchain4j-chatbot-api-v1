@@ -1,0 +1,9 @@
+openai:
+  api:
+    key: ${OPENAI_API_KEY}
+pgvector:
+  host: ${PGVECTOR_HOST}
+  port: ${PGVECTOR_PORT}
+  database: ${PGVECTOR_DATABASE}
+  user: ${PGVECTOR_USER}
+  password: ${PGVECTOR_PASSWORD}
