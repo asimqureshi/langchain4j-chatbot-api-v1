@@ -44,10 +44,18 @@ cd chatbot-api-v1
 CREATE EXTENSION IF NOT EXISTS vector;
 ```
 
-#### Create Database (if needed)
+#### Create Table
 
 ```sql
-CREATE DATABASE postgres;
+create table documents (
+  id bigserial not null,
+  text text null,
+  metadata jsonb null,
+  embedding vector null,
+  embedding_id uuid not null,
+  constraint documents_pkey primary key (id, embedding_id),
+  constraint documents_embedding_id_key unique (embedding_id)
+);
 ```
 
 ### 3. Environment Variables
