@@ -1,4 +1,4 @@
-# Chatbot API
+# Chatbot API powered by LangChain4j
 
 A Spring Boot-based chatbot application powered by LangChain4j, OpenAI, and PostgreSQL with pgvector for semantic search and embeddings.
 
